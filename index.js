@@ -12,8 +12,16 @@ for (i = 0; i < users.length; i++) {
 console.log(displayArray);
 alert(JSON.stringify(displayArray));
 
-const userId = prompt("Enter an ID:");
+const user_id = prompt("Enter an ID:");
 
 let todoList = " ";
 
+for (i = 0; i < todos.length; i++) {
+    if (todos[i].userId == user_id) {
+        todoList += todos[i].title + "\n";
+    }
+
+}
+
+alert(todoList);
 
